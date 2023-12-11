@@ -4,9 +4,12 @@
 int main(){
 
     int w;
+
+    start:
+
     printf("請輸入1-4其中的數值:");
     scanf("%d",&w);
-
+    
     switch (w)
         {
         case 1:
@@ -23,9 +26,10 @@ int main(){
             break;
         default:
             printf("輸入錯誤!\n");
+            goto start;
         }
 
-
+    
 
 
 
