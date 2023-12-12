@@ -4,18 +4,12 @@
 int main(){
 
     int sum=1;
-
-    while (1)
+    do
     {
-        if(sum%3==1 && sum%5==3 && sum%7==2)
-        {
-            printf("最少有%d隻兔子\n",sum);
-            break;
-        }
-        else
-            sum++;
-    }
+        sum++;
+    } while (sum%3!=1 || sum%5!=3 || sum%7!=2);
     
+    printf("兔子最少有%d隻\n",sum);
 
     return 0;
 }
