@@ -3,13 +3,9 @@
 
 int main(){
 
-    int i,j,n,sum;
+    int i,j,n=11,sum;
 
-    do
-    {
-        printf("請輸入整數:");
-        scanf("%d",&n);
-    } while (n<=0);
+
 
     i = n-1;
 
