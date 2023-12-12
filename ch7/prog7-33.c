@@ -10,10 +10,12 @@ int main(){
         printf("請輸入整數:");
         scanf("%d",&n);
     } while (n<=0);
+
     i = n-1;
+
     while (i!=0)
     {
-        for ( j = 1,sum =0; j <=i; j++)
+        for (j = 1,sum =0; j <=i; j++)
             if(i%j==0)
             sum+=j;
         if (sum == i+1)
